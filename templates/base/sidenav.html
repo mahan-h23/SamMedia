@@ -1,0 +1,58 @@
+{% load static %}
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a class="brand-link">
+        <img src="{% static 'img/s2.png' %}" alt="AdminLTE Logo" class="brand-image "
+        >
+        <span class="brand-text font-weight-light"> &nbsp&nbsp&nbspSam Media</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex justify-content-center">
+            <!--
+            <div class="image">
+                <img src="" class="img-circle elevation-2" alt="User Image">
+            </div>
+            -->
+            <span class="avatar rounded-circle">
+                  <img alt="Avatar" src="{% static 'img/al2.jpg' %}"
+                       style="width:60px; border-radius: 100%">
+                </span>
+            <div style="align-content: center" class="info d-flex justify-content-center">
+                <a style="align-self: center; align-content: center" href="#"
+                   class="d-block">&nbsp Admin</a>
+            </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+                <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                       aria-label="Search" id="searchbar2">
+                <div class="input-group-append">
+                    <button class="btn btn-sidebar">
+                        <i class="fas fa-search fa-fw"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                     with font-awesome or any other icon font library -->
+
+                <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-tachometer-alt "></i>
+                    <p class="nav-item">
+                        &nbsp&nbsp&nbsp Dashboard
+
+                    </p>
+                </a>
+
+
+
+            </ul>
+        </nav>
