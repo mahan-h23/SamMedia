@@ -3,6 +3,10 @@
 <head>
     {% load static %}
     {% include 'base/head.html' %}
+
+    <link href="https://cdn.webdatarocks.com/latest/webdatarocks.min.css" rel="stylesheet"/>
+    <script src="https://cdn.webdatarocks.com/latest/webdatarocks.toolbar.min.js"></script>
+    <script src="https://cdn.webdatarocks.com/latest/webdatarocks.js"></script>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -133,11 +137,11 @@
                                 <div class="tab-content p-0">
                                     <!-- Morris chart - Sales -->
                                     <div class="chart tab-pane active" id="revenue-chart"
-                                         style="position: relative; height: 300px;">
+                                         style="position: relative; height: 350px;">
                                         <canvas id="myChart7"></canvas>
                                     </div>
                                     <div class="chart tab-pane" id="sales-chart"
-                                         style="position: relative; height: 300px;">
+                                         style="position: relative; height: 350px;">
                                         <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
                                     </div>
                                 </div>
@@ -149,7 +153,7 @@
                     </section>
                     <!-- /.Left col -->
                     <!-- right col (We are only adding the ID to make the widgets sortable)-->
-                    <section class="col-lg-6 connectedSortable">
+                    <section class="col-lg-6 ">
                         <!-- Custom tabs (Charts with tabs)-->
                         <div class="card">
                             <div class="card-header" style="background: #a2e4fc">
@@ -157,29 +161,17 @@
                                     <i class="fas fa-chart-pie mr-1"></i>
                                     Services
                                 </h3>
-                                <!-- Tools
-                                <div class="card-tools">
-                                    <ul class="nav nav-pills ml-auto">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#sales-chart" data-toggle="tab">Donut</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                -->
                             </div><!-- /.card-header -->
                             <div class="card-body">
                                 <div class="tab-content p-0">
                                     <!-- Morris chart - Sales -->
                                     <div class="chart tab-pane active" id="revenue-chart"
-                                         style="position: relative; height: 300px;">
-                                        <canvas id="myChart"></canvas>
+                                         style="position: relative; height: 350px;">
+                                        <div id="wdr-component"></div>
                                     </div>
                                     <div class="chart tab-pane" id="sales-chart"
-                                         style="position: relative; height: 300px;">
-                                        <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                         style="position: relative; height: 350px;">
+
                                     </div>
                                 </div>
                             </div><!-- /.card-body -->
@@ -228,10 +220,11 @@
 </script>
 
 <script>
-    var endpoint = '/home/api/incident'
+    var endpoint = '/api/affiliateuser'
+
+    var active = [];
+    var deactive = [];
     var total = [];
-    var live = [];
-    var closed2 = [];
 
 
     var endpoint2 = '/home/api/contingency'
@@ -244,9 +237,10 @@
         url: endpoint,
         success: function (data) {
 
+
+            active = data.active
+            deactive = data.deactive
             total = data.total
-            live = data.live
-            closed2 = data.closed
 
             setChart()
 
@@ -282,71 +276,83 @@
         var myChart77 = new Chart(ctx7, {
             type: 'bar',
             data: {
-                labels: ['Incidents'],
+                labels: ['aff_2', 'aff_3', 'aff_4','Others'],
                 datasets: [
                     {
-                        label: 'Live',
-                        data: live,
-                        borderWidth: 3,
-                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                        borderColor: 'rgb(255, 99, 132)',
+                        label: 'Active Users',
+                        data: active,
+                        backgroundColor: [
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+
+                        ],
+                        borderWidth: 1
 
 
                     },
 
                     {
-                        label: 'Closed',
-                        data: closed2,
-                        borderWidth: 3,
-                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                        borderColor: 'rgb(75, 192, 192)',
+                        label: 'Deactivated Users',
+                        data: deactive,
+                        backgroundColor: [
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
 
+                        ],
+                        borderColor: [
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
 
+                        ],
+                        borderWidth: 1
                     },
 
                     {
-                        label: 'Total',
+                        label: 'Total Users',
                         data: total,
-                        borderWidth: 3,
-                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                        borderColor: 'rgb(54, 162, 235)',
+                        backgroundColor: [
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+
+                        ],
+                        borderWidth: 1
 
 
-                    }
+                    },
+
                 ]
             },
-            options: {
-                tooltips: {
-                    displayColors: true,
-                    callbacks: {
-                        mode: 'x',
-                    },
-                },
-                scales: {
-                    xAxes: [{
-                        stacked: false,
-                        gridLines: {
-                            display: false,
-                        }
-                    }],
-                    yAxes: [{
-                        stacked: false,
-                        ticks: {
-                            min: 0, // it is for ignoring negative step.
-                            beginAtZero: true,
-                            stepSize: 5,
-                            max: 35,
-                            callback: function (value, index, values) {
-                                if (Math.floor(value) === value) {
-                                    return value;
-                                }
-                            }
-                        },
-                        type: 'linear',
-                    }]
-                },
+            options:
+                {
 
-            }
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        labels: {
+                            render: 'value'
+                        }
+                    }
+                }
 
 
         });
@@ -431,5 +437,46 @@
 
 
 </script>
+<script>
+    var pivot = new WebDataRocks({
+        container: "#wdr-component",
+        toolbar: false,
+        report: {
+            dataSource: {
 
+                type: "csv",
+                filename: "{% url 'affiliate_service' %}",
+
+
+            },
+
+            slice: {
+                rows: [{
+                    uniqueName: "affiliate"
+                },
+                    {
+                        uniqueName: "service"
+                    }],
+                columns: [
+                    {
+                        uniqueName: "is_active",
+                    },
+                    {
+                        uniqueName: "[Measures]",
+                    },
+
+
+                ],
+                measures: [{
+                    "uniqueName": "user_id",
+                    "aggregation": "sum",
+                    "format": "2sfou03a"
+                }],
+
+            },
+        },
+
+    });
+
+</script>
 </html>
