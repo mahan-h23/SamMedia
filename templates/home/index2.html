@@ -3,7 +3,6 @@
 <head>
     {% load static %}
     {% include 'base/head.html' %}
-
     <link href="https://cdn.webdatarocks.com/latest/webdatarocks.min.css" rel="stylesheet"/>
     <script src="https://cdn.webdatarocks.com/latest/webdatarocks.toolbar.min.js"></script>
     <script src="https://cdn.webdatarocks.com/latest/webdatarocks.js"></script>
@@ -159,7 +158,7 @@
                             <div class="card-header" style="background: #a2e4fc">
                                 <h3 class="card-title">
                                     <i class="fas fa-chart-pie mr-1"></i>
-                                    Services
+                                    Services Pivot Table
                                 </h3>
                             </div><!-- /.card-header -->
                             <div class="card-body">
@@ -180,6 +179,450 @@
 
 
                     </section>
+                    <!-- right col -->
+                </div>
+                <div class="row">
+                    <!-- Left col -->
+                    <section class="col-lg-6 connectedSortable">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Affiliates Pie Chart
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                    <section class="col-lg-6 ">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Users OS
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart3"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- right col -->
+                </div>
+
+                <div class="row">
+                    <!-- Left col -->
+                    <section class="col-lg-6 connectedSortable">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Phone Operator Pie Chart
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart4"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                    <section class="col-lg-6 ">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Users Services
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart5"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- right col -->
+                </div>
+
+                <div class="row">
+                    <!-- Left col -->
+                    <section class="col-lg-6 connectedSortable">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Users lost less than a Month
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart6"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                    <section class="col-lg-6 ">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Affiliate Users Lost in a Month
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart77"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- right col -->
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div style="background-color: #BD1E51" class="card-header">
+                    <h4 style="color: white">Users By Transaction Overview</h4>
+                </div>
+                <br>
+
+                <div class="row">
+                    <!-- Left col -->
+                    <section class="col-lg-6 connectedSortable">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Payment Status Overview
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart8"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                    <section class="col-lg-6 ">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Affiliate Payment Status
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart9"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- right col -->
+                </div>
+
+
+                <div class="row">
+                    <!-- Left col -->
+                    <section class="col-lg-6 connectedSortable">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Phone Operator Payment Status
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart10"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                    <section class="col-lg-6 ">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    OS Payment Status
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart11"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- right col -->
+                </div>
+
+                <div class="row">
+                    <!-- Left col -->
+                    <section class="col-lg-6 connectedSortable">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Affiliates Share for Transactions
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart12"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                    <section class="col-lg-6 ">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    OS Transaction Shares
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart13"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- right col -->
+                </div>
+
+                <div class="row">
+                    <!-- Left col -->
+                    <section class="col-lg-12 connectedSortable">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Deactivated Users In 24H After Failed Payment
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="myChart14"></canvas>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+
+                    <!-- right col -->
+                </div>
+
+                <div class="row">
+                    <!-- Left col -->
+                    <section class="col-lg-12">
+                        <!-- Custom tabs (Charts with tabs)-->
+                        <div class="card">
+                            <div class="card-header" style="background: #a2e4fc">
+                                <h3 class="card-title">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Transaction Overview Pivot Table
+                                </h3>
+                            </div><!-- /.card-header -->
+                            <div class="card-body">
+                                <div class="tab-content p-0">
+                                    <!-- Morris chart - Sales -->
+                                    <div class="chart tab-pane active" id="revenue-chart"
+                                         style="position: relative; height: 350px;">
+                                        <div id="wdr-component2"></div>
+                                    </div>
+                                    <div class="chart tab-pane" id="sales-chart"
+                                         style="position: relative; height: 350px;">
+                                        <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                                    </div>
+                                </div>
+                            </div><!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+
+                    </section>
+                    <!-- /.Left col -->
+                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
+
                     <!-- right col -->
                 </div>
             </div>
@@ -227,9 +670,64 @@
     var total = [];
 
 
-    var endpoint2 = '/home/api/contingency'
-    var table = [];
+    var endpoint2 = '/api/affiliatepie'
+    var piechart = [];
     var simu = [];
+
+    var endpoint3 = '/api/ospie'
+    var os = [];
+    var osuser = [];
+
+    var endpoint4 = '/api/phonepie'
+    var operator = [];
+    var puser = [];
+
+    var endpoint5 = '/api/servicepie'
+    var service1 = [];
+    var suser = [];
+
+    var endpoint6 = '/api/lossmonth'
+    var days = [];
+    var luser = [];
+
+    var endpoint7 = '/api/lossmonthaff'
+    var aff = [];
+    var fuser = [];
+
+    var endpoint8 = '/api/statusover'
+    var status8 = [];
+    var user8 = [];
+
+    var endpoint9 = '/api/statusaff'
+    var deliver = [];
+    var failed = [];
+    var pend = [];
+    var others = [];
+
+    var endpoint10 = '/api/statusphone'
+    var deliverp = [];
+    var failedp = [];
+    var pendp = [];
+    var othersp = [];
+
+    var endpoint11 = '/api/statusos'
+    var delivero = [];
+    var failedo = [];
+    var pendo = [];
+    var otherso = [];
+
+
+    var endpoint12 = '/api/affshare'
+    var aff12 = [];
+    var user12 = [];
+
+    var endpoint13 = '/api/osshare'
+    var os13 = [];
+    var user13 = [];
+
+    var endpoint14 = '/api/transfailed'
+    var hours = [];
+    var user14 = [];
 
 
     $.ajax({
@@ -250,16 +748,227 @@
             console.log(error_data)
         }
     })
+    $.ajax({
+        method: "GET",
+        url: endpoint3,
+        success: function (data) {
+
+
+            os = data.os
+            osuser = data.users
+
+
+            setChart3()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
 
     $.ajax({
         method: "GET",
         url: endpoint2,
         success: function (data) {
 
-            table = data.table
-            simu = data.simu
+            piechart = data.all_user
 
             setChart2()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+
+    $.ajax({
+        method: "GET",
+        url: endpoint4,
+        success: function (data) {
+
+            operator = data.phone
+            puser = data.users
+
+            setChart4()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+    $.ajax({
+        method: "GET",
+        url: endpoint5,
+        success: function (data) {
+
+            service1 = data.service
+            suser = data.users
+
+            setChart5()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+
+    $.ajax({
+        method: "GET",
+        url: endpoint6,
+        success: function (data) {
+
+            days = data.days
+            luser = data.users
+
+            setChart6()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+    $.ajax({
+        method: "GET",
+        url: endpoint7,
+        success: function (data) {
+
+            aff = data.affiliates
+            fuser = data.users
+
+            setChart7()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+
+    $.ajax({
+        method: "GET",
+        url: endpoint8,
+        success: function (data) {
+
+            status8 = data.status
+            user8 = data.users
+
+            setChart8()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+
+    $.ajax({
+        method: "GET",
+        url: endpoint9,
+        success: function (data) {
+
+            deliver = data.delivered
+            failed = data.failed
+            pend = data.pend
+            others = data.others
+
+            setChart9()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+
+    $.ajax({
+        method: "GET",
+        url: endpoint10,
+        success: function (data) {
+
+            deliverp = data.delivered
+            failedp = data.failed
+            pendp = data.pend
+            othersp = data.others
+
+            setChart10()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+
+    $.ajax({
+        method: "GET",
+        url: endpoint11,
+        success: function (data) {
+
+            delivero = data.delivered
+            failedo = data.failed
+            pendo = data.pend
+            otherso = data.others
+
+            setChart11()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+
+    $.ajax({
+        method: "GET",
+        url: endpoint12,
+        success: function (data) {
+
+            aff12 = data.affiliates
+            user12 = data.users
+
+
+            setChart12()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+
+    $.ajax({
+        method: "GET",
+        url: endpoint13,
+        success: function (data) {
+
+            os13 = data.os
+            user13 = data.users
+
+
+            setChart13()
+
+        },
+        error: function (error_data) {
+            console.log("error")
+            console.log(error_data)
+        }
+    })
+
+    $.ajax({
+        method: "GET",
+        url: endpoint14,
+        success: function (data) {
+
+            hours = data.hours
+            user14 = data.users
+
+
+            setChart14()
 
         },
         error: function (error_data) {
@@ -276,7 +985,7 @@
         var myChart77 = new Chart(ctx7, {
             type: 'bar',
             data: {
-                labels: ['aff_2', 'aff_3', 'aff_4','Others'],
+                labels: ['aff_2', 'aff_3', 'aff_4', 'Others'],
                 datasets: [
                     {
                         label: 'Active Users',
@@ -364,29 +1073,25 @@
     function setChart2() {
 
         var ctx72 = document.getElementById("myChart");
-        ctx72.height = 150
+
 
         var myChart772 = new Chart(ctx72, {
-            type: 'bar',
+            type: 'doughnut',
+
             data: {
-                labels: ['Contingency'],
+                labels: ['Others', 'aff_2', 'aff_3', 'aff_4'],
                 datasets: [
                     {
-                        label: 'Table Top Test',
-                        data: table,
-                        borderWidth: 3,
-                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                        borderColor: 'rgb(255, 99, 132)',
+                        label: 'Users',
+                        data: piechart,
+                        backgroundColor: [
 
 
-                    },
-
-                    {
-                        label: 'Simulation Plans',
-                        data: simu,
-                        borderWidth: 3,
-                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                        borderColor: 'rgb(75, 192, 192)',
+                            '#ff0000',
+                            '#ffc000',
+                            '#ffff00',
+                            '#00ff00'
+                        ]
 
 
                     },
@@ -395,39 +1100,868 @@
                 ]
             },
             options: {
-                tooltips: {
-                    displayColors: true,
-                    callbacks: {
-                        mode: 'x',
-                    },
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
                 },
-                scales: {
-                    xAxes: [{
-                        stacked: false,
-                        gridLines: {
-                            display: false,
+                plugins: {
+                    datalabels: {
+                        formatter: (value) => {
+                            return value + '%';
                         }
-                    }],
-                    yAxes: [{
-
-                        stacked: false,
-
-                        ticks: {
-                            min: 0, // it is for ignoring negative step.
-                            beginAtZero: true,
-                            stepSize: 5,
-                            max: 35,
-                            callback: function (value, index, values) {
-                                if (Math.floor(value) === value) {
-                                    return value;
-                                }
-                            }
-                        },
-                        type: 'linear',
-                    }]
-                },
-
+                    }
+                }
             }
+
+
+        });
+
+
+    }
+
+    function setChart3() {
+
+        var ctx723 = document.getElementById("myChart3");
+
+
+        var myChart7723 = new Chart(ctx723, {
+            type: 'doughnut',
+
+            data: {
+                labels: os,
+                datasets: [
+                    {
+                        label: 'Users',
+                        data: osuser,
+                        backgroundColor: [
+
+
+                            '#ff0000',
+                            '#22ce72',
+                            '#2225ce',
+                            '#916704',
+                            '#ed05f5',
+                            '#67ffe3',
+                            '#d9d889',
+                        ]
+
+
+                    },
+
+
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
+                },
+                plugins: {
+                    datalabels: {
+                        formatter: (value) => {
+                            return value + '%';
+                        }
+                    }
+                }
+            }
+
+
+        });
+
+
+    }
+
+    function setChart4() {
+
+        var ctx7234 = document.getElementById("myChart4");
+
+
+        var myChart77234 = new Chart(ctx7234, {
+            type: 'doughnut',
+
+            data: {
+                labels: operator,
+                datasets: [
+                    {
+                        label: 'Users',
+                        data: puser,
+                        backgroundColor: [
+
+
+                            '#ff0000',
+                            '#fcdd76',
+                            '#22cece',
+
+                        ]
+
+
+                    },
+
+
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
+                },
+                plugins: {
+                    datalabels: {
+                        formatter: (value) => {
+                            return value + '%';
+                        }
+                    }
+                }
+            }
+
+
+        });
+
+
+    }
+
+    function setChart5() {
+
+        var ctx72345 = document.getElementById("myChart5");
+
+
+        var myChart772345 = new Chart(ctx72345, {
+            type: 'doughnut',
+
+            data: {
+                labels: service1,
+                datasets: [
+                    {
+                        label: 'Users',
+                        data: suser,
+                        backgroundColor: [
+
+
+                            '#ff0000',
+                            '#fcdd76',
+                            '#22cece',
+                            '#ed05f5',
+                            '#de7c33',
+
+                        ]
+
+
+                    },
+
+
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
+                },
+                plugins: {
+                    datalabels: {
+                        formatter: (value) => {
+                            return value + '%';
+                        }
+                    }
+                }
+            }
+
+
+        });
+
+
+    }
+
+    function setChart6() {
+
+        var ctx76 = document.getElementById("myChart6");
+
+
+        var myChart776 = new Chart(ctx76, {
+            type: 'bar',
+            data: {
+                labels: days,
+                datasets: [
+
+
+                    {
+                        label: 'Deactivated Users',
+                        data: luser,
+                        backgroundColor: [
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+
+                        ],
+                        borderWidth: 1
+                    },
+
+
+                ]
+            },
+            options:
+                {
+
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        labels: {
+                            render: 'value'
+                        }
+                    }
+                }
+
+
+        });
+
+
+    }
+
+    function setChart7() {
+
+        var ctx767 = document.getElementById("myChart77");
+
+
+        var myChart7767 = new Chart(ctx767, {
+            type: 'bar',
+            data: {
+                labels: aff,
+                datasets: [
+
+
+                    {
+                        label: 'Deactivated Users',
+                        data: fuser,
+                        backgroundColor: [
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+
+                        ],
+                        borderWidth: 1
+                    },
+
+
+                ]
+            },
+            options:
+                {
+
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        labels: {
+                            render: 'value'
+                        }
+                    }
+                }
+
+
+        });
+
+
+    }
+
+    function setChart8() {
+
+        var ctx723458 = document.getElementById("myChart8");
+
+
+        var myChart7723458 = new Chart(ctx723458, {
+            type: 'doughnut',
+
+            data: {
+                labels: status8,
+                datasets: [
+                    {
+                        label: 'Users',
+                        data: user8,
+                        backgroundColor: [
+
+
+                            '#05f589',
+                            '#e75353',
+                            '#22cece',
+                            '#ed05f5',
+
+
+                        ]
+
+
+                    },
+
+
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
+                },
+                plugins: {
+                    datalabels: {
+                        formatter: (value) => {
+                            return value + '%';
+                        }
+                    }
+                }
+            }
+
+
+        });
+
+
+    }
+
+    function setChart9() {
+
+        var ctx79 = document.getElementById("myChart9");
+        ctx79.height = 150
+
+        var myChart779 = new Chart(ctx79, {
+            type: 'bar',
+            data: {
+                labels: ['Others', 'aff_2', 'aff_3', 'aff_4'],
+                datasets: [
+                    {
+                        label: 'Delivered',
+                        data: deliver,
+                        backgroundColor: [
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+
+                        ],
+                        borderWidth: 1
+
+
+                    },
+
+                    {
+                        label: 'Failed',
+                        data: failed,
+                        backgroundColor: [
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+
+                        ],
+                        borderWidth: 1
+                    },
+
+                    {
+                        label: 'Pend',
+                        data: pend,
+                        backgroundColor: [
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+
+                        ],
+                        borderWidth: 1
+
+
+                    },
+
+                    {
+                        label: 'Others',
+                        data: others,
+                        backgroundColor: [
+                            'rgba(169,17,211,0.2)',
+                            'rgba(169,17,211,0.2)',
+                            'rgba(169,17,211,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(169,17,211)',
+                            'rgba(169,17,211)',
+                            'rgba(169,17,211)',
+
+                        ],
+                        borderWidth: 1
+
+
+                    },
+
+                ]
+            },
+            options:
+                {
+
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        labels: {
+                            render: 'value'
+                        }
+                    }
+                }
+
+
+        });
+
+
+    }
+
+    function setChart10() {
+
+        var ctx791 = document.getElementById("myChart10");
+
+
+        var myChart779 = new Chart(ctx791, {
+            type: 'bar',
+            data: {
+                labels: ["A", "B", "C"],
+                datasets: [
+                    {
+                        label: 'Delivered',
+                        data: deliverp,
+                        backgroundColor: [
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+
+                        ],
+                        borderWidth: 1
+
+
+                    },
+
+                    {
+                        label: 'Failed',
+                        data: failedp,
+                        backgroundColor: [
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+
+                        ],
+                        borderWidth: 1
+                    },
+
+                    {
+                        label: 'Pend',
+                        data: pendp,
+                        backgroundColor: [
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+
+                        ],
+                        borderWidth: 1
+
+
+                    },
+
+                    {
+                        label: 'Others',
+                        data: othersp,
+                        backgroundColor: [
+                            'rgba(169,17,211,0.2)',
+                            'rgba(169,17,211,0.2)',
+                            'rgba(169,17,211,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(169,17,211)',
+                            'rgba(169,17,211)',
+                            'rgba(169,17,211)',
+
+                        ],
+                        borderWidth: 1
+
+
+                    },
+
+                ]
+            },
+            options:
+                {
+
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        labels: {
+                            render: 'value'
+                        }
+                    }
+                }
+
+
+        });
+
+
+    }
+
+    function setChart11() {
+
+        var ctx7911 = document.getElementById("myChart11");
+
+
+        var myChart7791 = new Chart(ctx7911, {
+            type: 'bar',
+            data: {
+                labels: ["Android", "HarmonyOS", "OS X", 'Others', 'Windows Phone	', 'iOS', 'iPadOS'],
+                datasets: [
+                    {
+                        label: 'Delivered',
+                        data: delivero,
+                        backgroundColor: [
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+                            'rgba(17,250,0,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+                            'rgba(17,250,0)',
+
+                        ],
+                        borderWidth: 1
+
+
+                    },
+
+                    {
+                        label: 'Failed',
+                        data: failedo,
+                        backgroundColor: [
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+
+                        ],
+                        borderWidth: 1
+                    },
+
+                    {
+                        label: 'Pend',
+                        data: pendo,
+                        hidden: true,
+                        backgroundColor: [
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+                            'rgba(8,0,250,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+                            'rgba(8,0,250)',
+
+                        ],
+                        borderWidth: 1
+
+
+                    },
+
+                    {
+                        label: 'Others',
+                        data: otherso,
+                        hidden: true,
+                        backgroundColor: [
+                            'rgba(169,17,211,0.2)',
+                            'rgba(169,17,211,0.2)',
+                            'rgba(169,17,211,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(169,17,211)',
+                            'rgba(169,17,211)',
+                            'rgba(169,17,211)',
+
+                        ],
+                        borderWidth: 1
+
+
+                    },
+
+                ]
+            },
+            options:
+                {
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                autoSkip: false
+                            }
+                        }]
+                    },
+
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        labels: {
+                            render: 'value'
+                        }
+                    }
+                }
+
+
+        });
+
+
+    }
+
+    function setChart12() {
+
+        var ctx7212 = document.getElementById("myChart12");
+
+
+        var myChart77212 = new Chart(ctx7212, {
+            type: 'doughnut',
+
+            data: {
+                labels: aff12,
+                datasets: [
+                    {
+                        label: 'Users',
+                        data: user12,
+                        backgroundColor: [
+
+
+                            '#ff0000',
+                            '#ffc000',
+                            '#ffff00',
+                            '#00ff00'
+                        ]
+
+
+                    },
+
+
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
+                },
+                plugins: {
+                    datalabels: {
+                        formatter: (value) => {
+                            return value + '%';
+                        }
+                    }
+                }
+            }
+
+
+        });
+
+
+    }
+
+    function setChart13() {
+
+        var ctx72123 = document.getElementById("myChart13");
+
+
+        var myChart772123 = new Chart(ctx72123, {
+            type: 'doughnut',
+
+            data: {
+                labels: os13,
+                datasets: [
+                    {
+                        label: 'Users',
+                        data: user13,
+                        backgroundColor: [
+
+
+                            "rgb(5,245,137)",
+                            "rgb(237,5,245)",
+                            "rgb(34,37,206)",
+                            "rgb(222,246,0)",
+                            "rgb(114,72,217)",
+                            "rgba(204,31,92)",
+                            "rgba(2,5,0,0.2)",
+
+                        ]
+
+
+                    },
+
+
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: true
+                },
+                plugins: {
+                    datalabels: {
+                        formatter: (value) => {
+                            return value + '%';
+                        }
+                    }
+                }
+            }
+
+
+        });
+
+
+    }
+
+    function setChart14() {
+
+        var ctx79114 = document.getElementById("myChart14");
+
+
+        var myChart77914 = new Chart(ctx79114, {
+            type: 'bar',
+            data: {
+                labels: hours,
+                datasets: [
+
+
+                    {
+                        label: 'Deactivated Users',
+                        data: user14,
+                        backgroundColor: [
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+                            'rgba(238,13,52,0.2)',
+
+                        ],
+                        borderColor: [
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+                            'rgba(238,13,52)',
+
+                        ],
+                        borderWidth: 1
+                    },
+
+
+
+                ]
+            },
+            options:
+                {
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                autoSkip: false
+                            }
+                        }]
+                    },
+
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        labels: {
+                            render: 'value'
+                        }
+                    }
+                }
 
 
         });
@@ -460,6 +1994,53 @@
                 columns: [
                     {
                         uniqueName: "is_active",
+                    },
+                    {
+                        uniqueName: "[Measures]",
+                    },
+
+
+                ],
+                measures: [{
+                    "uniqueName": "user_id",
+                    "aggregation": "sum",
+                    "format": "2sfou03a"
+                }],
+
+            },
+        },
+
+    });
+
+</script>
+
+<script>
+    var pivot2 = new WebDataRocks({
+        container: "#wdr-component2",
+        toolbar: false,
+        report: {
+            dataSource: {
+
+                type: "csv",
+                filename: "{% url 'trans_over' %}",
+
+
+            },
+
+            slice: {
+                rows: [{
+                    uniqueName: "affiliate"
+                },
+                    {
+                        uniqueName: "service"
+                    },
+                    {
+                        uniqueName: "os_name"
+                    },
+                ],
+                columns: [
+                    {
+                        uniqueName: "status",
                     },
                     {
                         uniqueName: "[Measures]",

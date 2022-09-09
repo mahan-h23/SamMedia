@@ -1,0 +1,59 @@
+affiliate,service,os_name,status,user_id
+Others,gc,Android,Delivered,50
+Others,gc,Android,Failed,78
+Others,gc,iOS,Delivered,19
+Others,gc,iOS,Failed,18
+aff_2,tv,Android,Delivered,1412
+aff_2,tv,Android,Failed,3800
+aff_2,tv,HarmonyOS,Delivered,4
+aff_2,tv,Others,Delivered,21
+aff_2,tv,Others,Failed,65
+aff_2,tv,iOS,Delivered,623
+aff_2,tv,iOS,Failed,1078
+aff_2,tv,iPadOS,Delivered,3
+aff_3,gc,Android,Delivered,47
+aff_3,gc,Android,Failed,164
+aff_3,gc,Others,Delivered,8
+aff_3,gc,Others,Failed,43
+aff_3,gc,iOS,Delivered,5
+aff_3,gc,iOS,Failed,15
+aff_4,cl,Android,Delivered,2420
+aff_4,cl,Android,Failed,7428
+aff_4,cl,HarmonyOS,Delivered,34
+aff_4,cl,HarmonyOS,Failed,13
+aff_4,cl,Others,Delivered,27
+aff_4,cl,Others,Failed,100
+aff_4,cl,Windows Phone,Failed,7
+aff_4,cl,iOS,Delivered,1034
+aff_4,cl,iOS,Failed,2039
+aff_4,gc,Android,Delivered,1067
+aff_4,gc,Android,Failed,4089
+aff_4,gc,HarmonyOS,Failed,2
+aff_4,gc,OS X,Failed,1
+aff_4,gc,Others,Delivered,63
+aff_4,gc,Others,Failed,221
+aff_4,gc,Windows Phone,Failed,7
+aff_4,gc,iOS,Delivered,192
+aff_4,gc,iOS,Failed,407
+aff_4,gc,iPadOS,Failed,1
+aff_4,ma,Android,Delivered,2444
+aff_4,ma,Android,Failed,8218
+aff_4,ma,HarmonyOS,Delivered,7
+aff_4,ma,HarmonyOS,Failed,8
+aff_4,ma,OS X,Failed,1
+aff_4,ma,Others,Delivered,24
+aff_4,ma,Others,Failed,78
+aff_4,ma,Windows Phone,Failed,9
+aff_4,ma,iOS,Delivered,1130
+aff_4,ma,iOS,Failed,1896
+aff_4,ma,iOS,Pending,2
+aff_4,ps,Android,Delivered,4476
+aff_4,ps,Android,Failed,11121
+aff_4,ps,HarmonyOS,Delivered,6
+aff_4,ps,HarmonyOS,Failed,14
+aff_4,ps,OS X,Delivered,1
+aff_4,ps,Others,Delivered,53
+aff_4,ps,Others,Failed,158
+aff_4,ps,iOS,Delivered,2431
+aff_4,ps,iOS,Failed,4194
+aff_4,ps,iOS,Others,1
